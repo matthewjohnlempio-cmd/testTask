@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+    </head>
+    <body>
+        <!-- Announcement Bar -->
+        <div class="announcement-bar">
+            <div class="announcement-item"><strong>UP TO 60% OFF + FREE GIFTS</strong></div>
+            <div class="announcement-item"><strong>VETERINARIAN RECOMMENDED</strong></div>
+            <div class="announcement-item"><strong>LIMITED TIME OFFER</strong></div>
+        </div>
+
+
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img class="logo" src="/images/logo.avif" alt="Logo">
+                <a href="#">Shop Taurine</a>
+                <a href="#">Best Sellers</a>
+                <div class="dropdown">
+                <button class="dropbtn">
+                    Support
+                    <img src="images/svg/vector.svg" class="dropdown-icon" alt="Dropdown Icon">
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Track Your Order</a>
+                    <a href="#">Contact</a>
+                </div>
+                </div>
+                <a href="#" class="manage-subscription">Manage Subscription</a>
+            </div>
+
+            <div class="navbar-right">
+                <div class="currency-dropdown">
+                    <button class="dropbtn" id="currencyBtn">
+                        Loading...
+                        <img src="images/svg/vector.svg" class="dropdown-icon" alt="">
+                    </button>
+
+                    <div class="dropdown-content" id="currencyList">
+                        <!-- populated by JS -->
+                    </div>
+                </div>
+
+                <i class="fa-regular fa-user user-icon"></i>
+
+                <a href="#" class="cart-link">
+                    <img src="images/svg/cart.svg" alt="Cart" class="cart-icon">
+                </a>
+            </div>
+        </nav>
+
+        <!-- Product Section -->
+        <section class="product-section">
+            <div class="product-container">
+                <!-- Left: Product Images -->
+                <div class="product-images">
+                    <div class="main-image">
+                        <div class="carousel-track">
+                            <img class="carousel-slide active" src="images/product/cat1.webp" alt="KittySupps Taurine">
+                            <img class="carousel-slide" src="images/product/cat2.webp" alt="">
+                            <img class="carousel-slide" src="images/product/cat3.webp" alt="">
+                            <img class="carousel-slide" src="images/product/cat4.webp" alt="">
+                            <img class="carousel-slide" src="images/product/cat5.webp" alt="">
+                            <img class="carousel-slide" src="images/product/cat6.webp" alt="">
+                            <img class="carousel-slide" src="images/product/cat7.webp" alt="">
+                            <img class="carousel-slide" src="images/product/cat8.webp" alt="">
+                        </div>
+                    </div>
+
+                <div class="thumbnails-container">
+                        <button class="thumb-nav prev" id="thumbPrev">
+                            <img src="images/svg/vector.svg" alt="Prev">
+                        </button>
+
+                        <div class="thumbnails-wrapper">
+                            <div class="thumbnails">
+                                <img class="thumb active" src="images/product/cat1.webp" alt="">
+                                <img class="thumb" src="images/product/cat2.webp" alt="">
+                                <img class="thumb" src="images/product/cat3.webp" alt="">
+                                <img class="thumb" src="images/product/cat4.webp" alt="">
+                                <img class="thumb" src="images/product/cat5.webp" alt="">
+                                <img class="thumb" src="images/product/cat6.webp" alt="">
+                                <img class="thumb" src="images/product/cat7.webp" alt="">
+                                <img class="thumb" src="images/product/cat8.webp" alt="">
+                            </div>
+                        </div>
+
+                        <button class="thumb-nav next" id="thumbNext">
+                            <img src="images/svg/vector.svg" alt="Next">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right: Product Info -->
+                <div class="product-info">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span class="rating-text">Rated 4.8/5 by 1000+ devoted cat parents</span>
+                    </div>
+
+                    <h1 class="product-title">
+                        Stop the Silent Deficiency Before You See the Signs with KittySupps<sup>TM</sup> Taurine Supplement</strong>
+                    </h1>
+
+                    <p class="product-description">
+                        Don't wait for silent deficiency to strike. KittySupps Taurine fills the gap your cat's food leaves behind, supporting healthy vision, heart function, and daily vitality in one simple scoop.
+                    </p>
+
+                    <div class="low-stock">
+                        <div class="low-stock-dot-wrapper">
+                            <div class="low-stock-dot ping"></div>
+                            <div class="low-stock-dot static"></div>
+                        </div>
+                        <span id="ls-text"><strong>Only 8 Left in stock</strong></span>
+                    </div>
+
+                    <div class="almost-sold-out">
+                        <p>
+                            <strong>Almost Sold Out</strong>: High Demand Due to Limited Time Sale!
+                        </p>
+                    </div>
+
+                    <div class="buy-more-divider">
+                        <span><strong>BUY MORE - SAVE MORE</strong></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
