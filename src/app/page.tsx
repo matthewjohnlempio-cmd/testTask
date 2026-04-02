@@ -471,11 +471,22 @@ export default function Page() {
             <div className="flex flex-col w-full max-w-xl gap-4">
               <input
                 type="email"
-                placeholder="Enter your email"
-                className="w-full px-4 py-3 text-gray-700 rounded border border-gray-500 focus:outline-none focus:border-white placeholder-gray-400"
+                placeholder="Email"
+                className="w-full px-4 py-3 text-white rounded border border-[#ffffffcc] focus:outline-none focus:border-white placeholder-[#ffffffcc]"
               />
-              <button className="w-full px-4 py-3 text-[#121212] bg-white font-bold rounded hover:border-2 hover:border-white hover:bg-[#121212] hover:text-white transition">
-                Sign Up
+
+              <button className="relative overflow-hidden w-full bg-white  text-[#121212] font-bold py-3 rounded-md border-2 border-white transition active:scale-[0.98] group">
+                
+                {/* LEFT TRAIN */}
+                <span className="absolute left-0 top-0 h-full w-1/2 bg-[#121212] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
+
+                {/* RIGHT TRAIN */}
+                <span className="absolute right-0 top-0 h-full w-1/2 bg-[#121212] transform translate-x-full group-hover:translate-x-0 transition-transform duration-300 ease-in-out"></span>
+
+                {/* TEXT */}
+                <span className="relative z-10 group-hover:text-white transition">
+                  Sign Up
+                </span>
               </button>
             </div>
           </div>
